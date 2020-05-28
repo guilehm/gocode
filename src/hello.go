@@ -9,6 +9,9 @@ func main() {
 	variablesInt()
 	mixTypeVariables()
 	condition()
+	initializeValues()
+	shortInitialization()
+	appendToSlices()
 }
 
 func variablesInt() {
@@ -34,4 +37,21 @@ func condition() {
 	} else {
 		fmt.Println("default")
 	}
+}
+
+func initializeValues() {
+	var a [5]int
+	a[2] = 7
+	fmt.Println(a)
+}
+
+func shortInitialization() {
+	a := [5]int{5, 4, 3, 2, 1}
+	fmt.Println(a)
+}
+
+func appendToSlices() {
+	a := []int{1, 2, 3, 4}
+	a = append(a, 5)
+	fmt.Println(a)
 }
