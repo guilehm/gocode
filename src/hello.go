@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func main() {
@@ -17,6 +18,8 @@ func main() {
 	otherIteration()
 	iterationByRange()
 	iterationByRangeInMap()
+	sum(2, 3)
+	sqrt(0333)
 }
 
 func variablesInt() {
@@ -99,4 +102,15 @@ func iterationByRangeInMap() {
 	for key, value := range m {
 		fmt.Println("key", key, "value", value)
 	}
+}
+
+func sum(x int, y int) int {
+	fmt.Println(x + y)
+	return x + y
+}
+
+func sqrt(x float64) float64 {
+	result := math.Sqrt(x)
+	fmt.Println(result)
+	return result
 }
