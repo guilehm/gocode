@@ -12,6 +12,11 @@ func main() {
 	initializeValues()
 	shortInitialization()
 	appendToSlices()
+	vertices()
+	iterations()
+	otherIteration()
+	iterationByRange()
+	iterationByRangeInMap()
 }
 
 func variablesInt() {
@@ -54,4 +59,44 @@ func appendToSlices() {
 	a := []int{1, 2, 3, 4}
 	a = append(a, 5)
 	fmt.Println(a)
+}
+
+func vertices() {
+	vertices := make(map[string]int)
+	vertices["dodecagon"] = 12
+	vertices["triangle"] = 3
+	vertices["square"] = 5
+	delete(vertices, "square")
+	fmt.Println(vertices)
+}
+
+func iterations() {
+	for i := 1; i < 3; i++ {
+		fmt.Println(i)
+	}
+}
+
+func otherIteration() {
+	i := 0
+	for i < 5 {
+		fmt.Println(i)
+		i++
+	}
+}
+
+func iterationByRange() {
+	arr := []string{"a", "b", "c"}
+	for index, value := range arr {
+		fmt.Println("index", index, "value", value)
+	}
+}
+
+func iterationByRangeInMap() {
+	m := make(map[string]string)
+	m["a"] = "a"
+	m["b"] = "b"
+	m["c"] = "c"
+	for key, value := range m {
+		fmt.Println("key", key, "value", value)
+	}
 }
