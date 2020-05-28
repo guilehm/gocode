@@ -20,6 +20,7 @@ func main() {
 	iterationByRangeInMap()
 	sum(2, 3)
 	sqrt(0333)
+	makePerson()
 }
 
 func variablesInt() {
@@ -113,4 +114,14 @@ func sqrt(x float64) float64 {
 	result := math.Sqrt(x)
 	fmt.Println(result)
 	return result
+}
+
+type person struct {
+	name string
+	age  int
+}
+
+func makePerson() {
+	p := person{name: "jack", age: 89}
+	fmt.Println(p)
 }
