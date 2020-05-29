@@ -22,6 +22,7 @@ func main() {
 	sqrt(0333)
 	makePerson()
 	formatPrint()
+	multipleDeclareVar()
 }
 
 func variablesInt() {
@@ -129,5 +130,13 @@ func makePerson() {
 
 func formatPrint() {
 	i := 54
-	fmt.Printf("%v, %T", i, i)
+	fmt.Printf("%v, %T\n", i, i)
+}
+
+func multipleDeclareVar() {
+	var (
+		name string = "Elisabeth"
+		age  int    = 77
+	)
+	fmt.Printf("Name: %v Age: %v\n", name, age)
 }
