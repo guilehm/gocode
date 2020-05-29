@@ -21,6 +21,7 @@ func main() {
 	sum(2, 3)
 	sqrt(0333)
 	makePerson()
+	formatPrint()
 }
 
 func variablesInt() {
@@ -124,4 +125,9 @@ type person struct {
 func makePerson() {
 	p := person{name: "jack", age: 89}
 	fmt.Println(p)
+}
+
+func formatPrint() {
+	i := 54
+	fmt.Printf("%v, %T", i, i)
 }
