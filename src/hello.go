@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strconv"
 )
 
 func main() {
@@ -23,6 +24,7 @@ func main() {
 	makePerson()
 	formatPrint()
 	multipleDeclareVar()
+	toStringConversion()
 }
 
 func variablesInt() {
@@ -139,4 +141,11 @@ func multipleDeclareVar() {
 		age  int    = 77
 	)
 	fmt.Printf("Name: %v Age: %v\n", name, age)
+}
+
+func toStringConversion() {
+	// to avoid * as a conversion from int to str
+	var i int = 42
+	var j string = strconv.Itoa(i)
+	fmt.Printf("%v\n", j)
 }
