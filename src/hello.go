@@ -8,23 +8,6 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	variablesInt()
-	mixTypeVariables()
-	condition()
-	initializeValues()
-	shortInitialization()
-	appendToSlices()
-	vertices()
-	iterations()
-	otherIteration()
-	iterationByRange()
-	iterationByRangeInMap()
-	sum(2, 3)
-	sqrt(0333)
-	makePerson()
-	formatPrint()
-	multipleDeclareVar()
-	toStringConversion()
 }
 
 func variablesInt() {
@@ -32,6 +15,7 @@ func variablesInt() {
 	var y int = 10
 	var sum int = x + y
 	fmt.Println(sum)
+	// 15
 }
 
 func mixTypeVariables() {
@@ -39,6 +23,7 @@ func mixTypeVariables() {
 	y := 4
 	sum := x + y
 	fmt.Println(sum)
+	// 6
 }
 
 func condition() {
