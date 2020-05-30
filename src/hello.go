@@ -50,23 +50,27 @@ func condition() {
 	} else {
 		fmt.Println("default")
 	}
+	// default
 }
 
 func initializeValues() {
 	var a [5]int
 	a[2] = 7
 	fmt.Println(a)
+	// [0 0 7 0 0]
 }
 
 func shortInitialization() {
 	a := [5]int{5, 4, 3, 2, 1}
 	fmt.Println(a)
+	// [5 4 3 2 1]
 }
 
 func appendToSlices() {
 	a := []int{1, 2, 3, 4}
 	a = append(a, 5)
 	fmt.Println(a)
+	// [1 2 3 4 5]
 }
 
 func vertices() {
@@ -76,6 +80,7 @@ func vertices() {
 	vertices["square"] = 5
 	delete(vertices, "square")
 	fmt.Println(vertices)
+	// map[dodecagon:12 triangle:3]
 }
 
 func iterations() {
@@ -128,11 +133,13 @@ type person struct {
 func makePerson() {
 	p := person{name: "jack", age: 89}
 	fmt.Println(p)
+	// {jack 89}
 }
 
 func formatPrint() {
 	i := 54
 	fmt.Printf("%v, %T\n", i, i)
+	// 54, int
 }
 
 func multipleDeclareVar() {
@@ -141,6 +148,7 @@ func multipleDeclareVar() {
 		age  int    = 77
 	)
 	fmt.Printf("Name: %v Age: %v\n", name, age)
+	// Name: Elisabeth Age: 77
 }
 
 func toStringConversion() {
@@ -148,4 +156,5 @@ func toStringConversion() {
 	var i int = 42
 	var j string = strconv.Itoa(i)
 	fmt.Printf("%v\n", j)
+	// 42
 }
