@@ -149,3 +149,14 @@ func constant() {
 	fmt.Printf("%v, %T\n", myConst, myConst)
 	// 42, int
 }
+
+func iotaExample() {
+	const (
+		a = iota
+		b
+		c
+		d
+	)
+	fmt.Println(a, b, c, d)
+	// 0 1 2 3
+}
