@@ -143,3 +143,9 @@ func toStringConversion() {
 	fmt.Printf("%v\n", j)
 	// 42
 }
+
+func constant() {
+	const myConst int = 42
+	fmt.Printf("%v, %T\n", myConst, myConst)
+	// 42, int
+}
