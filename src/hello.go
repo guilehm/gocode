@@ -160,3 +160,12 @@ func iotaExample() {
 	fmt.Println(a, b, c, d)
 	// 0 1 2 3
 }
+
+func matrix() {
+	var identityMatrix [3][3]int
+	identityMatrix[0] = [3]int{1, 0, 0}
+	identityMatrix[1] = [3]int{0, 1, 0}
+	identityMatrix[2] = [3]int{0, 0, 1}
+	fmt.Println(identityMatrix)
+	// [[1 0 0] [0 1 0] [0 0 1]]
+}
