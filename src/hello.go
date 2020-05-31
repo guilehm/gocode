@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"math"
 	"strconv"
 )
@@ -203,4 +204,8 @@ func typeConversion() {
 	// convert string to byte slice
 	fmt.Println([]byte("Hello World"))
 	// [72 101 108 108 111 32 87 111 114 108 100]
+}
+
+func saveToFile(content string) {
+	ioutil.WriteFile("test.txt", []byte(content), 0666)
 }
