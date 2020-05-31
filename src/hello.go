@@ -198,3 +198,9 @@ func slices() {
 	fmt.Println(firstHand)
 	// [Ace of Spades Six of Spades Two of Spades]
 }
+
+func typeConversion() {
+	// convert string to byte slice
+	fmt.Println([]byte("Hello World"))
+	// [72 101 108 108 111 32 87 111 114 108 100]
+}
