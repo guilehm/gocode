@@ -191,3 +191,10 @@ func printMethodFromTypeFunc() {
 	cards := deck{"Ace of Spades", "Six of Spades"}
 	cards.print()
 }
+
+func slices() {
+	cards := [...]string{"Ace of Spades", "Six of Spades", "Two of Spades"}
+	firstHand := cards[:3]
+	fmt.Println(firstHand)
+	// [Ace of Spades Six of Spades Two of Spades]
+}
