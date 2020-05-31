@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math"
+	"os"
 	"strconv"
 )
 
@@ -212,10 +213,11 @@ func saveToFile(content string) {
 
 func readFromFile(filename string) {
 	bs, err := ioutil.ReadFile(filename)
-	// fmt.Println([]string(bs))
 	if err != nil {
 		fmt.Println("Error:", err)
+		// this will close the program
+		os.Exit(1)
 	} else {
-		fmt.Println("Success:", bs)
+		fmt.Println("Success:", string(bs))
 	}
 }
