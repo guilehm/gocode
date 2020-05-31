@@ -169,3 +169,9 @@ func matrix() {
 	fmt.Println(identityMatrix)
 	// [[1 0 0] [0 1 0] [0 0 1]]
 }
+
+func typeCreation() {
+	type deck []string
+	cards := deck{"Ace of Spades", "Six of Spades"}
+	fmt.Println(cards)
+}
