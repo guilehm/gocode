@@ -175,3 +175,19 @@ func typeCreation() {
 	cards := deck{"Ace of Spades", "Six of Spades"}
 	fmt.Println(cards)
 }
+
+// type declaration
+type deck []string
+
+// assign a function to a type
+func (d deck) print() {
+	for i, card := range d {
+		fmt.Println(i, card)
+	}
+}
+
+// use print from type
+func printMethodFromTypeFunc() {
+	cards := deck{"Ace of Spades", "Six of Spades"}
+	cards.print()
+}
