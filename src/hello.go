@@ -209,3 +209,13 @@ func typeConversion() {
 func saveToFile(content string) {
 	ioutil.WriteFile("test.txt", []byte(content), 0666)
 }
+
+func readFromFile(filename string) {
+	bs, err := ioutil.ReadFile(filename)
+	// fmt.Println([]string(bs))
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Println("Success:", bs)
+	}
+}
