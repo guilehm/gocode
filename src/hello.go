@@ -6,6 +6,7 @@ import (
 	"math"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -220,4 +221,10 @@ func readFromFile(filename string) {
 	} else {
 		fmt.Println("Success:", string(bs))
 	}
+}
+
+func splitByCharacter() {
+	content := "this,content,is,comma,separated,values"
+	fmt.Println(strings.Split(content, ","))
+	// [this content is comma separated values]
 }
