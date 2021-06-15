@@ -19,3 +19,12 @@ func TestAdder(t *testing.T) {
 		t.Errorf("expected, '%d' but got '%d'", expected, sum)
 	}
 }
+
+func TestMultiplier(t *testing.T) {
+	mul := Multiply(2, 3)
+	expected := 6
+
+	if mul != expected {
+		t.Errorf("expected, '%d' but got '%d'", expected, mul)
+	}
+}
