@@ -2,8 +2,12 @@ package main
 
 import "fmt"
 
-func Repeat(character string) (repeated string) {
-	return character + character + character + character
+func Repeat(character string) string {
+	var repeated string
+	for i := 0; i < 4; i++ {
+		repeated = repeated + character
+	}
+	return repeated
 }
 
 func main() {
